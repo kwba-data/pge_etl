@@ -152,7 +152,7 @@ def save_metrics(
                 execute_values(
                     cur,
                     """
-                    INSERT INTO logs.unified_loader_run_metrics 
+                    INSERT INTO logs.etl_run_metrics
                     ( run_id, run_start, run_end, source_name,
                     source_start, source_end, records_extracted, records_loaded,
                     status, error_message)
