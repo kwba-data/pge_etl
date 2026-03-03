@@ -8,7 +8,7 @@ UV = "/home/ec2-user/.local/bin/uv"
 PGE_PROJECT = "/home/ec2-user/apps/pge_etl"
 DBT_PROJECT = "/home/ec2-user/apps/kwb_dw"
 
-config_path = Path(PGE_PROJECT) / "config" / "sources.yaml"
+config_path = Path(PGE_PROJECT) / "config" / "etl_variables.yaml"
 with open(config_path) as f:
     config = load(f, SafeLoader)
 
