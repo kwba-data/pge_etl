@@ -9,6 +9,7 @@ s3:
 sources:
   - name: pge_daily_energy_usage
     table_name: fact_daily_energy_usage
+    dbt_models: stg_pge__fact_daily_energy_usage+
     prim_key: 
       - usage_point_id
       - start_time
