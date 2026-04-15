@@ -2,9 +2,9 @@ db_name: kwb_dw
 schema_name: pge
 
 s3:
-  bucket: kwb-crl-bucket
-  webhook_prefix: pge/webhooks/unprocessed/
-  archive_prefix: pge/webhooks/processed/
+  bucket: pge-usage-webhooks-662855373822-us-west-2-an
+  webhook_prefix: unprocessed/
+  archive_prefix: processed/
 
 sources:
   - name: pge_daily_energy_usage
